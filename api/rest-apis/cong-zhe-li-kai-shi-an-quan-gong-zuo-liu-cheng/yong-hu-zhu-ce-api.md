@@ -12,7 +12,7 @@ description: 安全工作流程第 1 部分的 API。
 
 <details>
 
-<summary>POST /api/v1/auth/reserve</summary>
+<summary><em><strong>POST</strong></em> /api/v1/auth/reserve</summary>
 
 
 
