@@ -43,7 +43,7 @@ ED25519算法生成的公钥
 {% tabs %}
 {% tab title="cURL" %}
 {% code overflow="wrap" %}
-```
+```bash
 curl --location --request POST 'https://api.spaceandtime.io/api/v1/auth/reserve' \
 --header 'Content-Type: application/json' \
 --header 'Accept: */*' \
@@ -137,7 +137,7 @@ authCode or signature is invalid or expired OR userId or publicKey already exist
 {% tabs %}
 {% tab title="cURL" %}
 {% code overflow="wrap" %}
-```
+```bash
 curl --location --request POST 'https://api.spaceandtime.io/api/v1/auth/register' \
 --header 'Content-Type: application/json' \
 --data-raw '{
