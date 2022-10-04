@@ -46,11 +46,106 @@ FROM table_name;
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="DML" %}
+### :comet: 使用 DML Endpoint 修改 SxT 中的数据
 
+用DML端点执行 `INSERT`, `UPDATE` 和 `DELETE` 命令。
+
+
+
+#### 命令示例：
+
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
+```sql
+DELETE FROM table_name WHERE condition;
+```
 {% endtab %}
 
 {% tab title="DDL" %}
+### :comet: 使用 DDL 端点 在 SxT 中配置资源
 
+使用DML端点执行 `CREATE`, `ALTER` and `DROP` 命令。
+
+
+
+#### 命令示例：
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+```
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+```sql
+DROP TABLE table_name;
+```
 {% endtab %}
 {% endtabs %}
+
+## DQL 端点
+
+通过将 SQL 发送到此端点来执行所有 `SELECT` 命令（查询）。
+
+{% swagger method="post" path="" baseUrl="/sql/dql" summary="执行查询" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="bearer" type="String" required="true" %}
+从身份验证工作流接收的访问token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="biscuit" type="String" required="true" %}
+验证token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="resourceId" type="String" required="true" %}
+资源标识符
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="sqlText" type="String" required="true" %}
+要执行的原始 SQL
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="查询结果" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="无效的安全参数" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="无效的resourceId" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
