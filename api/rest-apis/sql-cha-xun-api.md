@@ -29,3 +29,28 @@ SELECT * FROM ETH.TRANSACTIONS LIMIT 1000;
 `resourceId` 是 `ETH.TRANSACTIONS`
 
 </details>
+
+{% tabs %}
+{% tab title="DQL" %}
+### :comet: 使用 DQL 端点查询 SxT 中的数据
+
+使用DQL端点执行 `SELECT` 命令。
+
+
+
+#### 命令示例：
+
+```sql
+SELECT column1, column2, ...
+FROM table_name;
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+
+{% tab title="DDL" %}
+
+{% endtab %}
+{% endtabs %}
