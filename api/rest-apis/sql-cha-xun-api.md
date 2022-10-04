@@ -149,3 +149,41 @@ DROP TABLE table_name;
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+#### 试一试：
+
+{% tabs %}
+{% tab title="cURL" %}
+```
+```
+{% endtab %}
+
+{% tab title="Javascript" %}
+```
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```
+curl -X POST \
+    "https://api.spaceandtime.io/sql/dql" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+	-H "biscuit: <BISCUIT>" \
+	-H "access_token: <ACCESS_TOKEN>" \
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'curl -X POST \
+    "https://api.spaceandtime.io/sql/dql" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+	-H "biscuit: <BISCUIT>" \
+	-H "access_token: <ACCESS_TOKEN>" \
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'curl -X POST \
+    "https://api.spaceandtime.io/sql/dql" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+	-H "biscuit: <BISCUIT>" \
+	-H "access_token: <ACCESS_TOKEN>" \
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'vfde
+```
+{% endtab %}
+{% endtabs %}
