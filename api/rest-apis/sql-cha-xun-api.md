@@ -154,36 +154,306 @@ DROP TABLE table_name;
 
 {% tabs %}
 {% tab title="cURL" %}
-```
-```
-{% endtab %}
-
-{% tab title="Javascript" %}
-```
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
+{% code overflow="wrap" %}
+```bash
 curl -X POST \
     "https://api.spaceandtime.io/sql/dql" \
     -H "Content-Type: application/json" \
     -H "Accept: application/json" \
 	-H "biscuit: <BISCUIT>" \
 	-H "access_token: <ACCESS_TOKEN>" \
-    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'curl -X POST \
-    "https://api.spaceandtime.io/sql/dql" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-	-H "biscuit: <BISCUIT>" \
-	-H "access_token: <ACCESS_TOKEN>" \
-    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'curl -X POST \
-    "https://api.spaceandtime.io/sql/dql" \
-    -H "Content-Type: application/json" \
-    -H "Accept: application/json" \
-	-H "biscuit: <BISCUIT>" \
-	-H "access_token: <ACCESS_TOKEN>" \
-    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'vfde
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "select * from PUBLIC.CUSTOMER"}'
 ```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Javascript" %}
+```javascript
+const url = new URL(
+    "'https://api.spaceandtime.io/sql/dql"
+);
+
+let headers = {
+  "Content-Type": "application/json",
+  "Accept": "application/json",
+  "biscuit": "<BISCUIT>",
+  "access_token":"<ACCESS_TOKEN>"
+
+};
+
+let body = {
+    "resourceId": "PUBLIC.CUSTOMER",
+    "sqlText": "select * from PUBLIC.CUSTOMER"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+import requests
+import json
+
+url = 'https://api.spaceandtime.io/sql/dql'
+payload = {
+    "resourceId": "PUBLIC.CUSTOMER",
+    "sqlText": "select * from PUBLIC.CUSTOMER"
+}
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'biscuit':'<BISCUIT>',
+  'access_token':'<ACCESS_TOKEN>'
+}
+response = requests.request('POST', url, headers=headers, json=payload)
+response.json()
+```
+{% endtab %}
+{% endtabs %}
+
+## DML 端点
+
+使用此端点执行所有 `INSERT`、`UPDATE`、`DELETE` 命令。
+
+{% swagger method="post" path="" baseUrl="/sql/dml" summary="修改数据" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="bearer" type="String" required="true" %}
+从身份验证工作流接收的访问token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="biscuit" type="String" required="true" %}
+验证token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="resourceId" type="String" required="true" %}
+资源标识符
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="sqlText" type="String" required="true" %}
+要执行的原始 SQL
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="DML 执行结果" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="无效的安全参数" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="无效的resourceId" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+#### 试一试：
+
+{% tabs %}
+{% tab title="cURL" %}
+{% code overflow="wrap" %}
+```bash
+curl -X POST \
+    "https://api.spaceandtime.io/sql/dml" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+	-H "biscuit: <BISCUIT>" \
+	-H "access_token: <ACCESS_TOKEN>" \
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "INSERT INTO PUBLIC.CUSTOMER (ID,FIRSTNAME,LASTNAME,EMAIL) VALUES(0, 'Robert', 'Jr', 'robert.jr@gem.com')"}'
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Javascript" %}
+```javascript
+const url = new URL(
+    "'https://api.spaceandtime.io/sql/dml"
+);
+
+let headers = {
+  "Content-Type": "application/json",
+  "Accept": "application/json",
+  "biscuit": "<BISCUIT>",
+  "access_token":"<ACCESS_TOKEN>"
+
+};
+
+let body = {
+    "resourceId": "PUBLIC.CUSTOMER",
+    "sqlText": "INSERT INTO PUBLIC.CUSTOMER (ID,FIRSTNAME,LASTNAME,EMAIL) VALUES(0, 'Robert', 'Jr', 'robert.jr@gem.com')"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));	
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+import requests
+import json
+
+url = 'https://api.spaceandtime.io/sql/dml'
+payload = {
+  "resourceId": "PUBLIC.CUSTOMER",
+  "sqlText": "INSERT INTO PUBLIC.CUSTOMER (ID,FIRSTNAME,LASTNAME,EMAIL) VALUES(0, 'Robert', 'Jr', 'robert.jr@gem.com')"
+}
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'biscuit':'<BISCUIT>',
+  'access_token':'<ACCESS_TOKEN>'
+}
+response = requests.request('POST', url, headers=headers, json=payload)
+response.json()python
+```
+{% endtab %}
+{% endtabs %}
+
+## DDL 端点
+
+使用此端点执行所有 `CREATE`、`ALTER`、`DROP` 命令。
+
+{% swagger method="post" path="" baseUrl="/sql/ddl" summary="配置资源" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="bearer" type="String" required="true" %}
+从身份验证工作流接收的访问token
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="resourceId" type="String" %}
+资源标识符
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" required="true" name="sqlText" type="String" %}
+要执行的原始 SQL
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="biscuit" type="String" required="true" %}
+验证token
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="DDL 执行结果" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="无效的安全参数" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="404: Not Found" description="无效的resourceId" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+#### 试一试：
+
+{% tabs %}
+{% tab title="cURL" %}
+{% code overflow="wrap" %}
+```bash
+curl -X POST \
+    "https://api.spaceandtime.io/sql/ddl" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+	-H "biscuit: <BISCUIT>" \
+	-H "access_token: <ACCESS_TOKEN>" \
+    -d '{"resourceId": "PUBLIC.CUSTOMER","sqlText": "CREATE TABLE PUBLIC.CUSTOMER (ID INTEGER,FIRSTNAME VARCHAR,LASTNAME VARCHAR,EMAIL VARCHAR,PRIMARY KEY (ID))"}'
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Second Tab" %}
+{% code overflow="wrap" %}
+```javascript
+const url = new URL(
+    "'https://api.spaceandtime.io/sql/ddl"
+);
+
+let headers = {
+  "Content-Type": "application/json",
+  "Accept": "application/json",
+  "biscuit": "<BISCUIT>",
+  "access_token":"<ACCESS_TOKEN>"
+
+};
+
+let body = {
+    "resourceId": "PUBLIC.CUSTOMER",
+    "sqlText": "CREATE TABLE PUBLIC.CUSTOMER (ID INTEGER,FIRSTNAME VARCHAR,LASTNAME VARCHAR,EMAIL VARCHAR,PRIMARY KEY (ID))"
+}
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+    body: body
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Python" %}
+{% code overflow="wrap" %}
+```python
+import requests
+import json
+
+url = 'https://api.spaceandtime.io/sql/ddl'
+payload = {
+  "resourceId": "public.CUSTOMER",
+  "sqlText": "CREATE TABLE PUBLIC.CUSTOMER (ID INTEGER,FIRSTNAME VARCHAR,LASTNAME VARCHAR,EMAIL VARCHAR,PRIMARY KEY (ID))"
+}
+headers = {
+  'Content-Type': 'application/json',
+  'Accept': 'application/json',
+  'biscuit':'<BISCUIT>',
+  'access_token':'<ACCESS_TOKEN>'
+}
+response = requests.request('POST', url, headers=headers, json=payload)
+response.json()
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
