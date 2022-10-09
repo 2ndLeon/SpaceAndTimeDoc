@@ -29,10 +29,10 @@
 
 ## 常见问题
 
-* [SxT 如何映射到...](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../README.md)
-  * [Snowflake](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../snowflake.md)
-  * [The Graph](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../the-graph.md)
-  * [Dune](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../dune.md)
+* [SxT 如何映射到...](chang-jian-wen-ti/how-does-sxt-map-to/README.md)
+  * [Snowflake](chang-jian-wen-ti/how-does-sxt-map-to/snowflake.md)
+  * [The Graph](chang-jian-wen-ti/how-does-sxt-map-to/the-graph.md)
+  * [Dune](chang-jian-wen-ti/how-does-sxt-map-to/dune.md)
 
 ## 其它版本 <a href="#other-languages" id="other-languages"></a>
 
