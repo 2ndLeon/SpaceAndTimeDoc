@@ -2,7 +2,7 @@
 description: 要使用 REST API 与 Space and Time 连接，您必须完成以下工作流程，通过 7 个简单的步骤在平台上注册和验证自己。
 ---
 
-# 从这里开始：安全工作流程
+# 🏁 从这里开始：安全工作流程
 
 ## 怎样使用此工作流程
 
@@ -123,7 +123,7 @@ API 规范可在此处找到。
 
 <summary>第 6 步：执行 Authentication Code API 以生成 <code>authCode</code></summary>
 
-API 规范可在[此处](yong-hu-ren-zheng.md)找到。成功后，您将收到一个临时的 `authCode`。
+API 规范可在[此处](user-authentication.md)找到。成功后，您将收到一个临时的 `authCode`。
 
 #### :pencil: 注意:
 
@@ -135,7 +135,7 @@ API 规范可在[此处](yong-hu-ren-zheng.md)找到。成功后，您将收到�
 
 <summary>第 7a 步：提供 <code>userId</code>、<code>authCode</code> 和 <code>signature</code> 以执行 Token Request API 并接收 <code>accessToken</code> 和 <code>refreshToken</code></summary>
 
-API 规范可在[此处](yong-hu-ren-zheng.md)找到。成功后，您将收到一个 `accessToken` 和一个 `refreshToken`。
+API 规范可在[此处](user-authentication.md)找到。成功后，您将收到一个 `accessToken` 和一个 `refreshToken`。
 
 #### :pencil: 注意:
 
@@ -146,7 +146,7 @@ API 规范可在[此处](yong-hu-ren-zheng.md)找到。成功后，您将收到�
 
 #### 以上步骤完成了吗？您已启动新会话！ :tada:&#x20;
 
-您已准备好开始发出安全的 [REST API 请求](../sql-cha-xun-api.md)。
+您已准备好开始发出安全的 [REST API 请求](../sql-query-api.md)。
 
 * :pencil: 注意: 第 7 步中收到的 `accessToken` 必须在非安全 API 请求中作为 Authorization 请求中的bearer token提供。
 

@@ -10,6 +10,6 @@
 [you-xi-yong-li.md](you-xi-yong-li.md)
 {% endcontent-ref %}
 
-{% content-ref url="web2-zhuan-web3-yong-li.md" %}
-[web2-zhuan-web3-yong-li.md](web2-zhuan-web3-yong-li.md)
+{% content-ref url="web2-to-web3.md" %}
+[web2-to-web3.md](web2-to-web3.md)
 {% endcontent-ref %}

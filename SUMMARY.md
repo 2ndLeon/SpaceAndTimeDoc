@@ -3,29 +3,29 @@
 ## Space and Time
 
 * [Space and Time 是什么？](README.md)
-* [常见用例](space-and-time/chang-jian-yong-li/README.md)
-  * [DeFi用例](space-and-time/chang-jian-yong-li/defi-yong-li.md)
-  * [游戏用例](space-and-time/chang-jian-yong-li/you-xi-yong-li.md)
-  * [Web2转Web3用例](space-and-time/chang-jian-yong-li/web2-zhuan-web3-yong-li.md)
+* [常见用例](space-and-time/common-use-cases/README.md)
+  * [DeFi用例](space-and-time/common-use-cases/defi-yong-li.md)
+  * [游戏用例](space-and-time/common-use-cases/you-xi-yong-li.md)
+  * [Web2转Web3用例](space-and-time/common-use-cases/web2-to-web3.md)
 
 ## API
 
 * [REST APIs](api/rest-apis/README.md)
-  * [🏁 从这里开始：安全工作流程](api/rest-apis/cong-zhe-li-kai-shi-an-quan-gong-zuo-liu-cheng/README.md)
-    * [用户注册 API](api/rest-apis/cong-zhe-li-kai-shi-an-quan-gong-zuo-liu-cheng/yong-hu-zhu-ce-api.md)
-    * [用户认证](api/rest-apis/cong-zhe-li-kai-shi-an-quan-gong-zuo-liu-cheng/yong-hu-ren-zheng.md)
-  * [SQL 查询 API](api/rest-apis/sql-cha-xun-api.md)
-  * [区块链数据 API](api/rest-apis/qu-kuai-lian-shu-ju-api.md)
+  * [🏁 从这里开始：安全工作流程](api/rest-apis/security-workflow/README.md)
+    * [用户注册](api/rest-apis/security-workflow/user-registration.md)
+    * [用户认证](api/rest-apis/security-workflow/user-authentication.md)
+  * [SQL 查询 API](api/rest-apis/sql-query-api.md)
+  * [区块链数据 API](api/rest-apis/blockchain-data-apis.md)
 
-## 整体架构
+## 整体架构 <a href="#architecture" id="architecture"></a>
 
-* [概览](zheng-ti-jia-gou/gai-lan.md)
-* [网关](zheng-ti-jia-gou/wang-guan.md)
-* [数据仓库](zheng-ti-jia-gou/shu-ju-cang-ku.md)
-* [平台安全](zheng-ti-jia-gou/ping-tai-an-quan/README.md)
-  * [Biscuit授权](zheng-ti-jia-gou/ping-tai-an-quan/biscuit-shou-quan.md)
-* [路线图项目](zheng-ti-jia-gou/lu-xian-tu-xiang-mu/README.md)
-  * [SQL证明](zheng-ti-jia-gou/lu-xian-tu-xiang-mu/sql-zheng-ming.md)
+* [概览](architecture/overview.md)
+* [网关](architecture/gateway.md)
+* [数据仓库](architecture/data-warehouse.md)
+* [平台安全](architecture/platform-security/README.md)
+  * [Biscuit授权](architecture/platform-security/biscuit-authorization.md)
+* [路线图项目](architecture/roadmap-items/README.md)
+  * [SQL证明](architecture/roadmap-items/proof-of-sql.md)
 
 ## 常见问题
 
