@@ -40,9 +40,9 @@ Space and Time 工程团队正在积极构建 SQL 证明的功能：允许数据
 
 <figure><img src="https://1359882050-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FzHdDPR6NVKwyccJmuzAw%2Fuploads%2FgKxg0DkPy12yibpYVQB3%2Ffig10.png?alt=media&#x26;token=3bb213c6-115b-459c-a9b0-951cc36e6787" alt=""><figcaption><p>图 10：Fiat-Shamir 非交互协议</p></figcaption></figure>
 
-### 承诺 <a href="#commitments" id="commitments"></a>
+### 承诺（commitment） <a href="#commitments" id="commitments"></a>
 
-The biggest computational cost revolves around the commitments and their uses. So, the decision of which commitment scheme we use is important. Fortunately, the commitment scheme that we chose can be treated as a "black box", so this choice can be modified as the product evolves.
+最大的计算成本围绕着承诺及其用途。因此，我们使用哪种承诺方案的决定很重要。幸运的是，我们选择的承诺方案可以被视为一个“黑匣子”，所以这个选择可以随着产品的发展而修改。
 
 有三个主要的^\[这也许是一个概括] 经常使用的承诺方案：Pedersen 承诺、KZG 承诺和 FRI 承诺。我们最初使用的承诺方案是广义的 Pedersen 承诺。有几个原因。
 
