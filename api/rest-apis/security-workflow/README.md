@@ -59,7 +59,7 @@ ssh-keygen -t ed25519
 
 <summary>第3步：执行 Reserve API 以保留 <code>userId</code> 和 <code>publicKey</code> </summary>
 
-API 规范可在此处找到。成功后，您将收到一个临时的 `authCode`。
+API 规范可在[此处](./#di-1-bu-fen-yong-hu-zhu-ce)找到。成功后，您将收到一个临时的 `authCode`。
 
 #### :pencil: 注意:
 

@@ -2,7 +2,7 @@
 description: 安全工作流程第 1 部分的 API。
 ---
 
-# 用户注册 API
+# 用户注册
 
 用户注册通过两部分工作流程完成。在开始注册工作流程之前，用户必须通过 ED25519 算法生成公钥/私钥对。
 
@@ -55,7 +55,7 @@ curl --location --request POST 'https://api.spaceandtime.io/api/v1/auth/reserve'
 {% endcode %}
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Javascript" %}
 ```javascript
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -149,7 +149,7 @@ curl --location --request POST 'https://api.spaceandtime.io/api/v1/auth/register
 {% endcode %}
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Javascript" %}
 ```javascript
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
@@ -197,6 +197,4 @@ print(response.text)
 {% endtabs %}
 
 ### [🔙 返回安全工作流程 ](./)
-
-
 
