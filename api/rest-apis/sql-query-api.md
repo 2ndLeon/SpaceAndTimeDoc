@@ -403,7 +403,7 @@ curl -X POST \
 {% endcode %}
 {% endtab %}
 
-{% tab title="Javascript" %}
+{% tab title="Second Tab" %}
 {% code overflow="wrap" %}
 ```javascript
 const url = new URL(
