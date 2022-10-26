@@ -21,12 +21,12 @@ description: 第一步是使用您喜欢的方法建立基本连接。
     • Login with Wallet - 查看区块链和您的私人数据\
     • Continue Anonymously - 仅查看区块链数据，对返回的数据有限制\ <mark style="color:red;"></mark>
 
-    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 3.  开始挖掘数据吧！您可以使用 dApp 可视化服务运行 SQL、探索 ERD 图并将数据可视化！\
     \
 
 
-    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 
@@ -38,12 +38,12 @@ description: 第一步是使用您喜欢的方法建立基本连接。
 
 **如何连接：**
 
-1. 如果需要，用 API 服务注册用户 ID（每个用户一次）
-2. 验证 UserID 并请求安全token（和重新验证token）
-   * 仅供参考，SxT 使用 [biscuits](broken-reference) 来处理私有表的去中心化授权&#x20;
-3. 您现在应该有了一个生效的token，可以使用它调用各种 SQL API 并提交查询！\
+1. 如果需要，用 API 服务[注册 UserID](../../api/rest-apis/security-workflow/user-registration.md)（每个用户一次）
+2. [验证 UserID](../../api/rest-apis/security-workflow/user-authentication.md) 并请求安全token（和重新验证token）
+   * 仅供参考，SxT 使用 [biscuits](../../architecture/platform-security/biscuit-authorization.md) 来处理私有表的去中心化授权&#x20;
+3. 您现在应该有了一个生效的token，可以使用它调用各种 [SQL API](../../api/rest-apis/sql-query-api.md) 并提交查询！\
    \
-   除了 SQL API 之外，还有越来越多的专业 API，例如区块链数据 API 和资源发现 API，而且还在不断增加。
+   除了 [SQL API](../../api/rest-apis/sql-query-api.md) 之外，还有越来越多的专业 API，例如[区块链数据 API](../../api/rest-apis/blockchain-data-apis.md) 和资源发现 API，而且还在不断增加。
 
 </details>
 
@@ -55,7 +55,7 @@ description: 第一步是使用您喜欢的方法建立基本连接。
 
 **如何连接：**
 
-1. 确保您运行的是 Java v11 或更高版本
+1. 确保您运行的是 [Java v11](https://www.codejava.net/java-se/download-and-install-java-11-openjdk-and-oracle-jdk) 或更高版本
 2. 下载 SxT JDBC 驱动程序，将 JAR 文件保存到您选择的文件夹并记下位置
 3.  打开本地的 JDBC 程序选项，并建立一个新连接：\
     _（这些说明会有所不同，具体取决于所使用的程序）_\
@@ -66,12 +66,12 @@ description: 第一步是使用您喜欢的方法建立基本连接。
     • 单击 OK 返回设置屏幕\
     • 保存您的配置设置
 4. JDBC 需要以下信息：\
-   • **user** - 这将是您在 Space and Time 中注册的 UserID\
-   • **password** - 这将是您注册过程中的私钥\
+   • **user** - 这将是您在 Space and Time 中[注册](../../api/rest-apis/security-workflow/user-registration.md)的 UserID\
+   • **password** - 这将是您[注册](../../api/rest-apis/security-workflow/user-registration.md)过程中的私钥\
    &#x20;   \- 用于生成签名，从不在客户端以外使用\
    &#x20;   \- 或者，您可以将密码留空并添加一个名为 **privateKey** 的属性\
    **• publicKey** - 这将是与上述私钥对应的公钥\
-   **• (可选) biscuit\_\<name>** - 绑定到许可表的 [biscuits](broken-reference) 列表。\
+   **• (可选) biscuit\_\<name>** - 绑定到许可表的 [biscuits](../../architecture/platform-security/biscuit-authorization.md) 列表。\
    &#x20;   \- 区块链表是公开的，不需要 biscuit\
    &#x20;   \- 对于 alpha 期间的私人数据表，每张表需要一个 biscuit \
    &#x20;      (biscuit\_\<tablename>)

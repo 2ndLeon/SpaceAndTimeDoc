@@ -18,11 +18,11 @@ JDBC 在用户名/密码 范式上运行，而 Space and Time 在更安全的用
 
 ### 属性
 
-* **user** - 应该为在新用户注册过程中提供的“userid”值。
+* **user** - 应该为在新[用户注册](../api/rest-apis/security-workflow/user-registration.md)过程中提供的“userid”值。
 * **password** - （可选）要么为空（空白），要么为用户的私钥。如果密码为空，则必须填写“privatekey”属性。
 * **privateKey** - （可选）如果密码为空，则此属性必须包含用户的私钥。
 * **publicKey** - 上面的privateKey对应的公钥。
-* **biscuit\_\<name>** - （可选） 绑定到许可表的 [biscuits](broken-reference) 列表。
+* **biscuit\_\<name>** - （可选） 绑定到许可表的 [biscuits](../architecture/platform-security/biscuit-authorization.md) 列表。
 
 {% hint style="info" %}
 无论使用“密码”还是“私钥”，用户的私钥**永远不会脱离** JDBC 驱动程序/用户的计算机。相反，私钥用于生成加密签名，允许Space and Time服务器验证密钥所有权，而无需传输密钥本身。
@@ -30,9 +30,9 @@ JDBC 在用户名/密码 范式上运行，而 Space and Time 在更安全的用
 
 ### **Biscuits:**
 
-Space and Time 使用 [biscuits](broken-reference) 来管理去中心化网络上的用户和表之间的安全授权。在 cookie 和用户之间建立这种关系确实需要 JDBC 驱动程序的一个额外步骤。
+Space and Time 使用 [biscuits](../architecture/platform-security/biscuit-authorization.md) 来管理去中心化网络上的用户和表之间的安全授权。在 cookie 和用户之间建立这种关系确实需要 JDBC 驱动程序的一个额外步骤。
 
-有关创建饼干的详细信息，请参阅[饼干授权](../architecture/platform-security/biscuit-authorization.md)页面
+有关创建biscuit的详细信息，请参阅[biscuit授权](../architecture/platform-security/biscuit-authorization.md)页面
 
 **受控版本/Alpha** - 对于初始版本，Space and Time要求将每个私有表添加一个biscuit到 JDBC 属性中。例如，如果您想从 JDBC 连接访问 3 个私有表“TableA”、“TableB”和“TableC”，则需要 3 个新的 JDBC 属性：
 

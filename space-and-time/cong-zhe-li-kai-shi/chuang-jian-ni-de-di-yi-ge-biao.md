@@ -4,7 +4,7 @@ description: 自定义表
 
 # 创建你的第一个表
 
-#### 🪐  在继续前进之前请确保已连接到Space and Time。🪐
+#### 🪐  在继续前进之前请确保已[连接到Space and Time](lian-jie-dao-space-and-time.md)。🪐
 
 ## 在Space and Time中创建表
 
@@ -57,4 +57,4 @@ on WALLET.WALLET_ADDRESS = My_User_Wallets.User_Wallet_Address
 where type in ('ERC721') -- only NFTs
 ```
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

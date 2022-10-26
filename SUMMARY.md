@@ -18,7 +18,7 @@
   * [🏁 从这里开始：安全工作流程](api/rest-apis/security-workflow/README.md)
     * [用户注册](api/rest-apis/security-workflow/user-registration.md)
     * [用户认证](api/rest-apis/security-workflow/user-authentication.md)
-  * [SQL 查询 API](api/rest-apis/sql-query-api.md)
+  * [SQL API](api/rest-apis/sql-query-api.md)
   * [区块链数据 API](api/rest-apis/blockchain-data-apis.md)
 * [JDBC驱动](ping-tai-jie-kou/jdbc-qu-dong.md)
 * [Web3集成](ping-tai-jie-kou/web3-ji-cheng/README.md)

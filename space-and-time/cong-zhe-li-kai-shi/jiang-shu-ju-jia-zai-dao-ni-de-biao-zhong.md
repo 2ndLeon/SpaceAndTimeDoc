@@ -4,13 +4,13 @@ description: 将数据放入Space and Time
 
 # 将数据加载到你的表中
 
-#### 🪐  在继续前进之前请确保已连接到Space and Time。🪐
+#### 🪐  在继续前进之前请确保已[连接到Space and Time](lian-jie-dao-space-and-time.md)。🪐
 
 ## 将数据加载到Space and Time中
 
 有几种方法可以将数据加载到Space and Time中，具体取决于体积、速度和频率。
 
-下面的示例将加载我们在上一节创建的示例表，创建您的第一个表，即：My\_User\_Wallets。如果您想一起体验，请务必先查看该部分。
+下面的示例将加载我们在上一节创建的示例表，[创建您的第一个表](chuang-jian-ni-de-di-yi-ge-biao.md)，即：My\_User\_Wallets。如果您想一起体验，请务必先查看该部分。
 
 <details>
 

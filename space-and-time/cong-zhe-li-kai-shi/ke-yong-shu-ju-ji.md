@@ -4,7 +4,7 @@ description: Space and Time 包含了区块链索引数据，免费提供给客�
 
 # 可用数据集
 
-作为对客户的服务，Space and Time 对所有区块链进行索引，并将它们规范化为对用户友好的数据模型。如果要直接查看表/数据模型，请访问 [Space and Time dapp](broken-reference)
+作为对客户的服务，Space and Time 对所有区块链进行索引，并将它们规范化为对用户友好的数据模型。如果要直接查看表/数据模型，请访问 [Space and Time dapp](../../ping-tai-jie-kou/space-and-time-dapp.md)
 
 索引的链目前包括：
 
@@ -42,7 +42,7 @@ description: Space and Time 包含了区块链索引数据，免费提供给客�
 
 Space and Time 也在构建其他 Web3 数据服务：
 
-* 构建区块链数据 API 规范，以进一步简化请求，并将随着时间的推移继续增加该列表
+* 构建[区块链数据 API](../../api/rest-apis/blockchain-data-apis.md) 规范，以进一步简化请求，并将随着时间的推移继续增加该列表
 * 包括基于特定智能合约事件动态创建新表的能力，为 dapp 提供极快的速度。
 
 记得回来查看更新！
