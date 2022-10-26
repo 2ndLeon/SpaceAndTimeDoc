@@ -14,12 +14,12 @@
 ## 平台接口
 
 * [Space and Time dapp](ping-tai-jie-kou/space-and-time-dapp.md)
-* [REST APIs](ping-tai-jie-kou/rest-apis/README.md)
-  * [🏁 从这里开始：安全工作流程](ping-tai-jie-kou/rest-apis/security-workflow/README.md)
-    * [用户注册](ping-tai-jie-kou/rest-apis/security-workflow/user-registration.md)
-    * [用户认证](ping-tai-jie-kou/rest-apis/security-workflow/user-authentication.md)
-  * [SQL 查询 API](ping-tai-jie-kou/rest-apis/sql-query-api.md)
-  * [区块链数据 API](ping-tai-jie-kou/rest-apis/blockchain-data-apis.md)
+* [REST APIs](api/rest-apis/README.md)
+  * [🏁 从这里开始：安全工作流程](api/rest-apis/security-workflow/README.md)
+    * [用户注册](api/rest-apis/security-workflow/user-registration.md)
+    * [用户认证](api/rest-apis/security-workflow/user-authentication.md)
+  * [SQL 查询 API](api/rest-apis/sql-query-api.md)
+  * [区块链数据 API](api/rest-apis/blockchain-data-apis.md)
 
 ## 整体架构 <a href="#architecture" id="architecture"></a>
 
@@ -33,10 +33,12 @@
 
 ## 学习了解
 
-* [SxT 如何映射到...](xue-xi-le-jie/how-does-sxt-map-to/README.md)
-  * [Snowflake](xue-xi-le-jie/how-does-sxt-map-to/snowflake.md)
-  * [The Graph](xue-xi-le-jie/how-does-sxt-map-to/the-graph.md)
-  * [Dune](xue-xi-le-jie/how-does-sxt-map-to/dune.md)
+* [常见用例](xue-xi-le-jie/chang-jian-yong-li/README.md)
+  * [DeFi用例](xue-xi-le-jie/chang-jian-yong-li/defi-yong-li.md)
+* [SxT 如何映射到...](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../README.md)
+  * [Snowflake](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../snowflake.md)
+  * [The Graph](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../the-graph.md)
+  * [Dune](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../dune.md)
 
 ## 其它版本 <a href="#other-languages" id="other-languages"></a>
 
