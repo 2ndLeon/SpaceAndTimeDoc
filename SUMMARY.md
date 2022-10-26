@@ -34,6 +34,7 @@
 ## 学习了解
 
 * [常见用例](xue-xi-le-jie/chang-jian-yong-li/README.md)
+  * [游戏用例](xue-xi-le-jie/chang-jian-yong-li/you-xi-yong-li.md)
   * [DeFi用例](xue-xi-le-jie/chang-jian-yong-li/defi-yong-li.md)
 * [SxT 如何映射到...](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../README.md)
   * [Snowflake](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../snowflake.md)

@@ -23,7 +23,7 @@ Group by EXCHANGE_NAME
 order by 2 desc
 ```
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (5).png>)
 
 你执行了你的第一条查询！ :tada:   \
 \
@@ -41,7 +41,7 @@ group by TokenType
 order by 2 desc 
 ```
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (20).png>)
 
 尝试用你的钱包地址替换上面的 WALLET\_ADDRESS，看看会发生什么！
 
@@ -51,7 +51,7 @@ order by 2 desc
 
 您可以使用 dApp 来探索可用的不同区块链和表格，方法是 跳转到数据模型选项卡并选择要探索的链：
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 这将显示具有标准化区块链数据的所有表的模型，包括键和性能连接路径（又名实体关系图或 ERD）：
 
@@ -59,6 +59,6 @@ order by 2 desc
 
 您还可以在右侧的“Query Editor”中找到此 ERD 模型。dApp 查询编辑器将自动完成表/列名称。当您将表添加到查询中时，右侧的模型将只关注那个表和相关/可连接表：
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 当然，Space and Time 是一个数据仓库——这意味着其他 ERD 程序和 SQL 开发环境也应该可以工作。
