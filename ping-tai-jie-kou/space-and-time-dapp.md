@@ -10,7 +10,7 @@ dApp 为那些希望立即开始使用区块链数据的人提供了一个快速
 
 请注意，在[受控发布](../space-and-time/shou-kong-qi-dong-zhu-yi-shi-xiang.md)期间，上述 URL 将需要特殊邀请访问权限。
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ## dApp 验证
 
@@ -43,11 +43,11 @@ dApp 旨在使用现代范式进行模型查看和查询编辑，使导航区块
 
 选择“Data Models”可以查看不同区块链的实体关系图（ERD）：
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 要探索实际模型，请触摸/单击特定链以查看完整的 ERD：
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 如果您将鼠标悬停在 ERD 中的任何表上，模型将突出显示所有其他可以连接的表，以及使用标准 ERD 表示法突出显示可连接列和连接类型（1:1、1:M 等）。
 
@@ -55,7 +55,7 @@ dApp 旨在使用现代范式进行模型查看和查询编辑，使导航区块
 
 单击“Query Editor”会打开基于 Web 的 Space and Time dApp 查询编辑器。 ERD 将保留在右侧，而左侧提供 SQL 编辑器空间，具有现代编辑功能，包括表/列自动完成、列编辑和语法着色。
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 要运行查询，请单击“Run Query”按钮，或使用快捷键：Ctrl-Enter。
@@ -63,17 +63,17 @@ dApp 旨在使用现代范式进行模型查看和查询编辑，使导航区块
 
 如果您有权访问多个集群，您将在页面顶部看到一个集群选择下拉菜单。系统选择对查询是“sticky”，这意味着它与查询元数据一起保存。
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 查询完成后，结果将以表格格式（默认）或使用动态创建的可视化显示在 SQL 编辑器下方。 dApp 将根据返回的数据尝试生成最佳视觉效果，但是如果您想调整视觉效果，只需单击视觉缩略图上方的“Customize Chart”按钮：
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ### 保存查询
 
 当您有想要保存到 dApp 的查询时，您可以单击“Save”按钮（或按 ctrl-S），为其命名、添加任何适当的标签、添加描述和“Save as New Query” 。如果您想稍后更改相同的查询，您可以选择“Update”以覆盖相同的查询名称。
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 查询名称不需要是唯一的，因此建议您为所有已保存的查询提供足够的信息，以便您了解它们的用途。
@@ -89,6 +89,6 @@ dApp 旨在使用现代范式进行模型查看和查询编辑，使导航区块
 
 最后，您可以查看“Query History”，它提供了按运行顺序排列的查询列表，包括 CPU 消耗、偏差、运行时和其他统计信息的摘要。
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **如果您对 dApp 有任何反馈，请与您的 Space and Time 联系人分享 - 我们希望这对 Web3 的所有开发者都非常有用！**

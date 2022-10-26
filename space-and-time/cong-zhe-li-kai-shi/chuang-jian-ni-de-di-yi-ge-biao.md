@@ -39,7 +39,7 @@ insert into My_User_Wallets
 select * from My_User_Wallets
 ```
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (20).png>)
 
 ### 加入链上和链下数据
 
@@ -57,4 +57,4 @@ on WALLET.WALLET_ADDRESS = My_User_Wallets.User_Wallet_Address
 where type in ('ERC721') -- only NFTs
 ```
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
