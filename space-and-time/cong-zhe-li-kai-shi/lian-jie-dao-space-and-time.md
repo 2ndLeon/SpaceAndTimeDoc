@@ -21,12 +21,12 @@ description: 第一步是使用您喜欢的方法建立基本连接。
     • Login with Wallet - 查看区块链和您的私人数据\
     • Continue Anonymously - 仅查看区块链数据，对返回的数据有限制\ <mark style="color:red;"></mark>
 
-    <figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 3.  开始挖掘数据吧！您可以使用 dApp 可视化服务运行 SQL、探索 ERD 图并将数据可视化！\
     \
 
 
-    <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 </details>
 

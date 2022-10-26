@@ -20,6 +20,11 @@
     * [用户认证](api/rest-apis/security-workflow/user-authentication.md)
   * [SQL 查询 API](api/rest-apis/sql-query-api.md)
   * [区块链数据 API](api/rest-apis/blockchain-data-apis.md)
+* [JDBC驱动](ping-tai-jie-kou/jdbc-qu-dong.md)
+* [Web3集成](ping-tai-jie-kou/web3-ji-cheng/README.md)
+  * [EVM 链 (Eth, Avax, 等.)](ping-tai-jie-kou/web3-ji-cheng/evm-lian-eth-avax-deng-..md)
+  * [Chainlink](ping-tai-jie-kou/web3-ji-cheng/chainlink.md)
+  * [3TL](ping-tai-jie-kou/web3-ji-cheng/3tl.md)
 
 ## 整体架构 <a href="#architecture" id="architecture"></a>
 
@@ -34,9 +39,9 @@
 ## 学习了解
 
 * [常见用例](xue-xi-le-jie/chang-jian-yong-li/README.md)
-  * [Web2转Web3用例](xue-xi-le-jie/chang-jian-yong-li/web2-zhuan-web3-yong-li.md)
-  * [游戏用例](xue-xi-le-jie/chang-jian-yong-li/you-xi-yong-li.md)
   * [DeFi用例](xue-xi-le-jie/chang-jian-yong-li/defi-yong-li.md)
+  * [游戏用例](xue-xi-le-jie/chang-jian-yong-li/you-xi-yong-li.md)
+  * [Web2转Web3用例](xue-xi-le-jie/chang-jian-yong-li/web2-zhuan-web3-yong-li.md)
 * [SxT 如何映射到...](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../README.md)
   * [Snowflake](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../snowflake.md)
   * [The Graph](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../the-graph.md)
