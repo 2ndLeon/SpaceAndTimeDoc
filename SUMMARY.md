@@ -47,6 +47,6 @@
   * [The Graph](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../the-graph.md)
   * [Dune](chang-jian-wen-ti/sxt-ru-he-ying-she-dao-.../dune.md)
 
-## 其它版本 <a href="#other-languages" id="other-languages"></a>
+***
 
-* [English](other-languages/english.md)
+* [英文原版](https://docs.spaceandtime.io/space-and-time/space-and-time/welcome-to-space-and-time)
